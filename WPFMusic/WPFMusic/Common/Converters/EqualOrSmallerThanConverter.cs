@@ -17,7 +17,7 @@ public class EqualOrSmallerThanConverter : IValueConverter
         int val = 0;
         int compareToValue = 0;
 
-        if (int.TryParse(value.ToString(), out val) && int.TryParse(parameter.ToString(), out compareToValue)
+        if (int.TryParse(value.ToString(), out val) && int.TryParse(parameter.ToString(), out compareToValue))
         {
             return val <= compareToValue;
         }
